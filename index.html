@@ -1,40 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Texas Hold'em Poker</title>
-  <link rel="stylesheet" href="../css/style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>لعبة بوكر تكساس</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <div id="game-table">
-    <h1>♠ Texas Hold'em Poker ♠</h1>
-    <div id="opponent-area">
-      <div id="opponent-cards" class="card-area"></div>
-      <div id="opponent-hand-info" class="hand-info"></div>
-    </div>
-
-    <div id="community-cards" class="card-area"></div>
-
-    <div id="player-area">
-      <div id="player-cards" class="card-area"></div>
-      <div id="player-hand-info" class="hand-info"></div>
-    </div>
-
-    <div id="controls">
-      <button onclick="playerAction('fold')">Fold</button>
-      <button onclick="playerAction('call')">Call</button>
-      <button onclick="playerAction('raise')">Raise</button>
-    </div>
-
-    <div id="status-bar">
-      <p id="pot-display">Pot: $0</p>
-      <p id="chips-display">Your Chips: $1000 | Bot Chips: $1000</p>
-    </div>
-
-    <button onclick="resetGame()">🔄 Reset</button>
+  <div class="loading-screen" id="loading">
+    <p>جارٍ التحميل...</p>
   </div>
 
-  <script src="../js/script.js"></script>
+  <div class="login-screen" id="login-screen">
+    <img src="images/character.png" class="character" alt="character" />
+    <h2>تسجيل الدخول</h2>
+    <button class="btn apple">تسجيل الدخول Apple</button>
+    <button class="btn facebook">تسجيل الدخول Facebook</button>
+    <button class="btn email">التسجيل بالبريد/الهاتف</button>
+    <button class="btn guest" onclick="startGame()">تسجيل الدخول كـ زائر</button>
+  </div>
+
+  <div class="game-ui" id="game-ui" style="display: none;">
+    <img src="images/character.png" class="character" />
+    <div class="buttons">
+      <button>ابدأ الآن</button>
+      <button>حلبة عامة</button>
+      <button>العب واربح</button>
+    </div>
+    <div class="bottom-bar">
+      <img src="images/icon-slot.png" alt="slot" />
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
