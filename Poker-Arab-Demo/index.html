@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>بوكر تكساس الاحترافية</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="loading-screen" id="loading">جارٍ تحميل اللعبة...</div>
+  <div class="login-screen" id="login">
+    <img src="character.png" alt="شخصية أنثوية" class="character" />
+    <h1>بوكر تكساس الاحترافية</h1>
+    <button onclick="enterGame()">تسجيل كضيف</button>
+  </div>
+
+  <div class="game-screen" id="game" style="display: none;">
+    <header>
+      <h2>مرحباً بك في الحلبة!</h2>
+      <div class="chips">💰 الرصيد: <span id="chips">1000</span></div>
+    </header>
+    <main>
+      <button>🎮 ابدأ الآن</button>
+      <button>🏆 حلبة عامة</button>
+      <button>🎁 العب واربح</button>
+    </main>
+    <footer>
+      <div class="slot">🎰 SLOT</div>
+      <div class="friends">👥 قائمة الأصدقاء</div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
