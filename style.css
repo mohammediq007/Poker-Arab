@@ -1,0 +1,39 @@
+
+body {
+  margin: 0;
+  font-family: Tahoma, sans-serif;
+  background: url('bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+.character {
+  width: 200px;
+  margin-top: 20px;
+}
+
+.login-screen, .game-screen, .loading-screen {
+  padding: 20px;
+}
+
+button {
+  background: gold;
+  color: black;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}

@@ -2,36 +2,34 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>لعبة بوكر تكساس</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>بوكر تكساس الاحترافية</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="loading-screen" id="loading">
-    <p>جارٍ التحميل...</p>
+  <div class="loading-screen" id="loading">جارٍ تحميل اللعبة...</div>
+  <div class="login-screen" id="login">
+    <img src="character.png" alt="شخصية أنثوية" class="character" />
+    <h1>بوكر تكساس الاحترافية</h1>
+    <button onclick="enterGame()">تسجيل كضيف</button>
   </div>
 
-  <div class="login-screen" id="login-screen">
-    <img src="images/character.png" class="character" alt="character" />
-    <h2>تسجيل الدخول</h2>
-    <button class="btn apple">تسجيل الدخول Apple</button>
-    <button class="btn facebook">تسجيل الدخول Facebook</button>
-    <button class="btn email">التسجيل بالبريد/الهاتف</button>
-    <button class="btn guest" onclick="startGame()">تسجيل الدخول كـ زائر</button>
+  <div class="game-screen" id="game" style="display: none;">
+    <header>
+      <h2>مرحباً بك في الحلبة!</h2>
+      <div class="chips">💰 الرصيد: <span id="chips">1000</span></div>
+    </header>
+    <main>
+      <button>🎮 ابدأ الآن</button>
+      <button>🏆 حلبة عامة</button>
+      <button>🎁 العب واربح</button>
+    </main>
+    <footer>
+      <div class="slot">🎰 SLOT</div>
+      <div class="friends">👥 قائمة الأصدقاء</div>
+    </footer>
   </div>
 
-  <div class="game-ui" id="game-ui" style="display: none;">
-    <img src="images/character.png" class="character" />
-    <div class="buttons">
-      <button>ابدأ الآن</button>
-      <button>حلبة عامة</button>
-      <button>العب واربح</button>
-    </div>
-    <div class="bottom-bar">
-      <img src="images/icon-slot.png" alt="slot" />
-    </div>
-  </div>
-
-  <script src="js/main.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
