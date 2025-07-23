@@ -1,0 +1,16 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #0b3d91;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+}
+#cards {
+    margin-top: 20px;
+}
